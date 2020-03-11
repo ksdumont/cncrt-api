@@ -12,5 +12,5 @@ CREATE TABLE artists (
     rate TEXT,
     location TEXT,
     travel BOOLEAN DEFAULT TRUE, 
-    contact TEXT,
-)
+    contact TEXT
+);
