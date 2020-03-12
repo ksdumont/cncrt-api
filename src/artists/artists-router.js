@@ -55,8 +55,38 @@ artistsRouter
       })
       .catch(next);
   })
-  .get()
-  .post()
+  .get((req, res, next) => {
+    res.json(res.artist);
+  })
+  .patch(jsonParser, (req, res, next) => {
+    const {
+      image,
+      bio,
+      website,
+      music,
+      video,
+      rate,
+      location,
+      travel,
+      contact
+    } = req.body;
+    const updatedFields = {
+      image,
+      bio,
+      website,
+      music,
+      video,
+      rate,
+      location,
+      travel,
+      contact
+    };
+    ArtistsService.updateArtist(req.app.get("db"), req.params.id, updatedFields)
+      .then(() => {
+        res.status(204).end();
+      })
+      .catch(next);
+  })
   .delete((req, res, next) => {
     ArtistsService.deleteArtist(req.app.get("db"), req.params.id)
       .then(() => {
