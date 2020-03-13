@@ -1,0 +1,61 @@
+function makeArtistsArray() {
+  return [
+    {
+      id: 1,
+      name: "Zeke Finn",
+      email: "zekefinnmusic@gmail.com",
+      username: "zekefinn",
+      password: "zekefinn",
+      image:
+        "https://static.wixstatic.com/media/79421a_5534c5fcf3184831b20eb940fc35cfb8~mv2.jpg/v1/crop/x_0,y_136,w_1080,h_536/fill/w_975,h_485,al_c,q_85,usm_0.66_1.00_0.01/Zeke%20Studio%20Pic.webp",
+      bio:
+        "Raised in Ithaca, New York to a beat artist parents, Zeke Finn grew up surrounded by open spaces and music. “We would go to Grassroots festival every summer since I was, like, 5. All these hippie parties and jams. That was my music.” The free rollicking jangle of those jams intersected Hip-Hop when Zeke discovered beatboxing in high school. “Then I was off. Started listening to Tupac, Talib Kweli, Mos Def and I started writing raps.”",
+      website: "https://www.zekefinn.com/",
+      music: "https://open.spotify.com/artist/6NN2RYVrasbgm0qtgGSWXg",
+      video: "https://www.youtube.com/watch?v=8wA4lE-Kg9w",
+      rate: "$50/hour",
+      location: "Los Angeles",
+      travel: true,
+      contact: "zekefinnmusic@gmail.com"
+    },
+    {
+      id: 2,
+      name: "Thom Yorke",
+      email: "thomyorke@gmail.com",
+      username: "thomyorke",
+      password: "thomyorke",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thom_Yorke_Austin_Texas_2016_%28cropped%29.jpg/330px-Thom_Yorke_Austin_Texas_2016_%28cropped%29.jpg",
+      bio:
+        "Thomas Edward Yorke (born 7 October 1968) is an English musician and the main vocalist and songwriter of the rock band Radiohead. A multi-instrumentalist, he mainly plays guitar and keyboards, and is known for his falsetto.",
+      website: "https://en.wikipedia.org/wiki/Thom_Yorke",
+      music: "https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau",
+      video: "https://www.youtube.com/watch?v=EdmL835q9To",
+      rate: "$200/hour",
+      location: "New York",
+      travel: true,
+      contact: "thomyorke@gmail.com"
+    },
+    {
+      id: 3,
+      name: "Kendrick Lamar",
+      email: "kendricklamar@gmail.com",
+      username: "kendricklamar",
+      password: "kendricklamar",
+      image:
+        "data:image/jpeg;base64,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",
+      bio:
+        "Kendrick Lamar Duckworth (born June 17, 1987) is an American rapper, songwriter, and record producer. He is regarded by many critics and contemporaries as one of the most important and influential rappers of his generation, and as one of the greatest rappers of all time.[1][2][3][4]",
+      website: "http://www.kendricklamar.com",
+      music: "http://www.kendricklamar.com/music",
+      video: "http://www.kendricklamar.com/videos",
+      rate: "$200/hour",
+      location: "Seattle",
+      travel: true,
+      contact: "kendricklamar@gmail.com"
+    }
+  ];
+}
+module.exports = {
+  makeArtistsArray
+};
