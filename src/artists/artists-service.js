@@ -14,7 +14,7 @@ const ArtistsService = {
   updateArtist(knex, id, newFields) {
     return knex("artists")
       .where({ id })
-      .update(newFields);
+      .update(newFields)
   },
   getById(knex, id) {
     return knex
