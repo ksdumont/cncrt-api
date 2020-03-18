@@ -30,7 +30,7 @@ Search local artists in your city. Contact artist directly. Register as an artis
 
 ## URL params
 
-   ####  /api/artists
+  * /api/artists
 
  ## Success Response
    
