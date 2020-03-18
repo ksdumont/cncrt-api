@@ -30,12 +30,12 @@ Search local artists in your city. Contact artist directly. Register as an artis
 
 ## URL params
 
-   *  /api/artists
+   ####  /api/artists
 
  ## Success Response
    
-    *  Code: 200
+   * Code: 200
  
  ## Error Response
   
-    * Code: 400
+  * Code: 400
