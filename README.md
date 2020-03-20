@@ -28,9 +28,37 @@ Search local artists in your city. Contact artist directly. Register as an artis
   
    GET | POST | DELETE | PATCH
 
-## URL params
+## Show all artists
+  * GET /api/artists
 
-  * /api/artists
+## Add a new artist
+  * POST /api/artists
+  ```
+  {
+  name: "", 
+  email: "", 
+  username: "", 
+  password: ""
+  }
+  ```
+  ## Delete an artist
+  * DELETE /api/artists/:artist_id
+  
+  ## Update an artists profile
+  * PATCH /api/artists/:artist_id
+  ```
+  {
+  image: "",
+  bio: "",
+  website: "",
+  music: "",
+  video: "",
+  rate: "",
+  location: "",
+  travel: Boolean,
+  contact: ""
+  }
+  ```
 
  ## Success Response
    
